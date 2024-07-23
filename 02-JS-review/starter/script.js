@@ -150,4 +150,4 @@ const book = getBook(2);
 const title = book.title;
 const author = book.author;
 
-console.log(author, title)
+console.log(title, book)

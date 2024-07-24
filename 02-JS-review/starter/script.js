@@ -145,7 +145,7 @@ function getBook(id) {
 
 // Destrcucturing
 
-const book = getBook(1);
+const book = getBook(2);
 book;
 
 // const title = book.title;
@@ -182,3 +182,10 @@ const summary = ` ${title} a ${pages} long book , was written by ${author} and p
   publicationDate.split("-")[0]
 } `;
 summary;
+
+// Ternaries Instead of if else statement
+
+const pagesRange = pages > 1000 ? "over a thousand " : "less than 1000";
+pagesRange;
+console.log(`The book ${pagesRange} pages`)
+

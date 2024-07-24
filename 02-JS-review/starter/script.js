@@ -196,5 +196,13 @@ console.log(`The book ${pagesRange} pages`);
 // }
 
 const getYear = (str) => str.split("-")[0];
-
 console.log(getYear(publicationDate));
+
+// short-circuiting and logical operators &&
+
+console.log(true && "some string");
+console.log(false && "some string");
+console.log(hasMovieAdaptation && "This book has a movie");
+
+// falsy: 0, '', null, undefine
+console.log('jonas')

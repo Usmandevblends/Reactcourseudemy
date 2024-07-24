@@ -145,7 +145,7 @@ function getBook(id) {
 
 // Destrcucturing
 
-const book = getBook(2);
+const book = getBook(1);
 book;
 
 // const title = book.title;
@@ -176,3 +176,9 @@ const updatedBook = {
   pages: 1210,
 };
 updatedBook;
+
+// Template Literals
+const summary = ` ${title} a ${pages} long book , was written by ${author} and published in ${
+  publicationDate.split("-")[0]
+} `;
+summary;

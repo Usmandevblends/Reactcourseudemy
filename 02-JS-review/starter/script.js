@@ -152,13 +152,27 @@ book;
 // const author = book.author;
 
 const { title, author, pages, publicationDate, genres, hasMovieAdaptation } =
-book;
+  book;
 
 console.log(title, book, genres);
 
 // const primaryGenre = genres[0];
 // const secondaryGenre = genres[1];
 
-const [  ...Othergenres] = genres;
+const [...Othergenres] = genres;
 
-console.log(   Othergenres);
+console.log(Othergenres);
+const [primaryGenre, secondaryGenre, ...otherGenres] = genres;
+console.log(primaryGenre, secondaryGenre, otherGenres);
+
+const newGenres = ["epic fantasy", ...genres];
+newGenres;
+
+const updatedBook = {
+  ...book,
+  // Adding a new property
+  moviePublicationDate: "2001-12-19",
+  // Overwriting an existing property
+  pages: 1210,
+};
+updatedBook;

@@ -1,6 +1,10 @@
 import React from "react";
 import "./components/style.css";
 import Pizza from "./components/Pizza";
+import Header from "./components/Header";
+import Footer from "./components/Footer";
+import Menu from "./components/Menu";
+// import 'bootstrap/dist/css/bootstrap.min.css'
 
 const pizzaData = [
   {
@@ -49,10 +53,11 @@ const pizzaData = [
 function App() {
   return (
     <>
-      <h1>Pizza App</h1>
-      <Pizza />
-      <Pizza />
-      <Pizza />
+      <div className="container">
+        <Header />
+        < Menu />
+        <Footer />
+      </div>
     </>
   );
 }

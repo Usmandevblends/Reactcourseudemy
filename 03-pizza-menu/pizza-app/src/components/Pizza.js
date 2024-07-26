@@ -6,7 +6,7 @@ function Pizza(props) {
       <img src={props.photoName} alt={props.name} />
       <h3>{props.name}</h3>
       <p>{props.ingredients}</p>
-      <span>{props.price}</span>
+      <span>{props.price + 3}</span>
     </div>
   );
 }

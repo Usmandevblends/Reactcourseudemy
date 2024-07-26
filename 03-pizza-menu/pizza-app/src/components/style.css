@@ -90,32 +90,6 @@ body {
   right: 0;
 }
 
-/* media qurie */
-/* Media query for mobile screens */
-@media only screen and (max-width: 320px) {
-    .header h1 {
-      /* Use an accessible color instead */
-      text-transform: uppercase;
-      text-align: center;
-      font-size: 3.2rem !important; /* avoid using !important */
-      font-weight: 300;
-      letter-spacing: 3px;
-      position: relative;
-      width: 100%;
-      display: block;
-    }
-  
-    .header h1::before,
-    .header h1::after {
-      display: block;
-      content: "";
-      height: 3px;
-      width: 4rem;
-      position: absolute;
-      top: calc(50% - 1px);
-    }
-  }
-
 /* *************** */
 
 .menu {
@@ -152,7 +126,7 @@ body {
 
 .pizza {
   display: flex;
-  gap: 3.2rem;
+  gap: 2rem;
 }
 
 .pizza img {

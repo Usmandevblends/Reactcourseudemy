@@ -55,7 +55,7 @@ function App() {
     <>
       <div className="container">
         <Header />
-        < Menu />
+        <Menu pizzaData={pizzaData} />
         <Footer />
       </div>
     </>

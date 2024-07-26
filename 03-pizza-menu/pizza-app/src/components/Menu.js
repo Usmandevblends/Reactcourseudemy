@@ -1,11 +1,16 @@
 import React from "react";
 import Pizza from "./Pizza";
 
-function Menu() {
+function Menu({ pizzaData }) {
   return (
     <main className="menu">
       <h2>Our Menu</h2>
-      <Pizza
+      <ul className="pizzas">
+        {pizzaData.map((pizza) => (
+          <Pizza pizzaObj={pizza} key={pizza.name} />
+        ))}
+      </ul>
+      {/* <Pizza
         name="Pizza Spinaci"
         ingredients="Tamoto/ mozarella, spinach, and ricotta cheese"
         photoName="Pizzas/spinaci.jpg"
@@ -16,7 +21,7 @@ function Menu() {
         ingredients="Tomato, mozarella, mushrooms, and onion"
         photoName="pizzas/funghi.jpg"
         price={13}
-      />
+      /> */}
     </main>
   );
 }

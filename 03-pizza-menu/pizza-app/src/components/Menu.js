@@ -15,6 +15,7 @@ function Menu() {
         name="Pizza Funghi"
         ingredients="Tomato, mozarella, mushrooms, and onion"
         photoName="pizzas/funghi.jpg"
+        price="12"
       />
       <Pizza  />
     </main>

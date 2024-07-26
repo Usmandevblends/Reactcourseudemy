@@ -6,7 +6,7 @@
 }
  
 ::-webkit-scrollbar-track {
-    background-color: lightblue;
+    background-color: rgb(206, 229, 236);
     -webkit-border-radius: 10px;
     border-radius: 505;
 }
@@ -14,7 +14,7 @@
 ::-webkit-scrollbar-thumb {
     -webkit-border-radius: 10px;
     border-radius: 10px;
-    background: #006c97; 
+    background: #edc84b; 
 }
 
 @import url("https://fonts.googleapis.com/css2?family=Roboto+Mono:ital,wght@0,300;0,400;0,500;1,300&display=swap");
@@ -211,6 +211,11 @@ FONT SIZE SYSTEM (px)
 
 @media only screen and (max-width: 768px) {
   /* For mobile phones: */
+
+  * {
+    user-select: auto;
+  }
+
   .container {
     padding: 2.4rem;
   }

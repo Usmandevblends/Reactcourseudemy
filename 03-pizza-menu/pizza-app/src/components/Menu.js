@@ -2,14 +2,19 @@ import React from "react";
 import Pizza from "./Pizza";
 
 function Menu({ pizzaData }) {
+  // const pizzas = pizzaData;
+  const pizzas = [];
+
   return (
     <main className="menu">
       <h2>Our Menu</h2>
-      <ul className="pizzas">
-        {pizzaData.map((pizza) => (
-          <Pizza pizzaObj={pizza} key={pizza.name} />
-        ))}
-      </ul>
+      {pizzas && (
+        <ul className="pizzas">
+          {pizzaData.map((pizza) => (
+            <Pizza pizzaObj={pizza} key={pizza.name} />
+          ))}
+        </ul>
+      )}
       {/* <Pizza
         name="Pizza Spinaci"
         ingredients="Tamoto/ mozarella, spinach, and ricotta cheese"

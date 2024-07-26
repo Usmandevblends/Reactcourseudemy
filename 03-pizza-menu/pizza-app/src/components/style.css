@@ -204,3 +204,104 @@ SPACING SYSTEM (px)
 FONT SIZE SYSTEM (px)
 10 / 12 / 14 / 16 / 18 / 20 / 24 / 30 / 36 / 44 /52 / 62 / 74 / 86 / 98
 */
+
+
+/* responsive */
+/* responsive */
+
+@media only screen and (max-width: 768px) {
+  /* For mobile phones: */
+  .container {
+    padding: 2.4rem;
+  }
+
+  .header h1 {
+    font-size: 3.6rem;
+  }
+
+  .menu h2 {
+    font-size: 1.8rem;
+  }
+
+  .menu > p {
+    font-size: 1.2rem;
+    width: 90%;
+  }
+
+  .pizzas {
+    grid-template-columns: 1fr;
+    gap: 2.4rem;
+  }
+
+  .pizza img {
+    width: 8rem;
+  }
+
+  .pizza h3 {
+    font-size: 1.6rem;
+  }
+
+  .pizza p {
+    font-size: 1.2rem;
+  }
+
+  .pizza span {
+    font-size: 1.4rem;
+  }
+
+  .footer {
+    font-size: 1.2rem;
+  }
+
+  .btn {
+    padding: 1rem 2rem;
+  }
+}
+
+@media only screen and (max-width: 480px) {
+  /* For smaller mobile phones: */
+  .container {
+    padding: 1.6rem;
+  }
+
+  .header h1 {
+    font-size: 2.8rem;
+  }
+
+  .menu h2 {
+    font-size: 1.4rem;
+  }
+
+  .menu > p {
+    font-size: 1rem;
+    width: 95%;
+  }
+
+  .pizzas {
+    gap: 1.6rem;
+  }
+
+  .pizza img {
+    width: 6rem;
+  }
+
+  .pizza h3 {
+    font-size: 1.4rem;
+  }
+
+  .pizza p {
+    font-size: 1rem;
+  }
+
+  .pizza span {
+    font-size: 1.2rem;
+  }
+
+  .footer {
+    font-size: 1rem;
+  }
+
+  .btn {
+    padding: 0.8rem 1.6rem;
+  }
+}

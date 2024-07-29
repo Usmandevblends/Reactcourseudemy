@@ -8,14 +8,14 @@ const messages = [
 ];
 
 function App() {
-  const step = 2;
+  const step = 1;
 
   function handlePrevious() {
     alert("pervious");
   }
 
   function handleNext() {
-    alert("pervious");
+    alert("Next");
   }
 
   return (

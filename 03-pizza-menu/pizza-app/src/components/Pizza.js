@@ -1,7 +1,6 @@
 import React from "react";
 
 function Pizza(props) {
-  console.log(props);
 
 if (props.pizzaObj.soldOut) return null;
 

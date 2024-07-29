@@ -1,7 +1,10 @@
 import React from "react";
 
 function Pizza(props) {
-  console.log(props)
+  console.log(props);
+
+if (props.pizzaObj.soldOut) return null;
+
   return (
     <li className="pizza">
       <img src={props.pizzaObj.photoName} alt={props.pizzaObj.name} />

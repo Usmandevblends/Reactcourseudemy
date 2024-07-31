@@ -1,6 +1,6 @@
 import React, { useState } from "react";
 import "./style.css";
-import Counter from "./Components/Counter";
+
 const messages = [
   "Learn React ⚛️",
   "Apply for jobs 💼",
@@ -50,7 +50,6 @@ function App() {
           </button>
         </div>
       </div>
-      <Counter />
     </>
   );
 }

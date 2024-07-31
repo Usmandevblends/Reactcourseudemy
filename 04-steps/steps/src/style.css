@@ -127,4 +127,16 @@ h3 {
     }
 }
 
+.btn {
+    background: transparent;
+    border: 2px solid #fff;
+    color: #fff;
+    padding: 7px 13px;
+    outline: none;
+    border-radius: 50px;
+    position: absolute;
+    top: 90%;
+    left: 50%;
+    transform: translate(-50px , -0px);
+}
 

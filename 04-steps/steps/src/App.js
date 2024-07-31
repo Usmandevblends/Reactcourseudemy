@@ -1,5 +1,6 @@
 import React, { useState } from "react";
 import "./style.css";
+import Advice from "./Components/advice";
 
 const messages = [
   "Learn React ⚛️",
@@ -50,6 +51,9 @@ function App() {
           </button>
         </div>
       </div>
+      <center>
+      <Advice />
+      </center>
     </>
   );
 }

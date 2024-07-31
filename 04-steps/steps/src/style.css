@@ -104,6 +104,9 @@ h3 {
     .buttons {
         gap: 10px;
     }
+    p {
+        font-size: 15px !important;
+    }
 }
 
 /* Media Query for Mobile View */
@@ -118,6 +121,9 @@ h3 {
         top: 40%;
         left: 50%;
         transform: translate(-50%, -50%);
+    }
+    p {
+        font-size: 12px;
     }
 }
 

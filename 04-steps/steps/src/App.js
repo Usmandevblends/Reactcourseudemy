@@ -18,7 +18,11 @@ function App() {
     }
   }
   function handleNext() {
-    if (step < 3) setStep(step + 1);
+    if (step < 3) {
+      setStep(step + 1);
+    }else if (step > 1) {
+      alert("You have completed all the steps");
+    }
   }
   return (
     <div className="steps">

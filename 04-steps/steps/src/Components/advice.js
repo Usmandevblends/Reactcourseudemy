@@ -1,21 +1,23 @@
 import React, { useState } from "react";
 
 function Advice() {
-  const [advice, setAdvice] = useState("");
+  const [count, setCount] = useState(0)
 
-  const fetchAdvice = async () => {
-    const response = await fetch("https://api.adviceslip.com/advice");
-    const data = await response.json();
-    setAdvice(data.slip.advice);
-  };
+  function Decerement() {
+    setCount(count - 1)
+  }
+
+  function Increment() {
+    setCount(count + 1)
+  }
 
   return (
-    <div>
-      <p style={{ color: "#fff" }}>{advice}</p>
-      <button onClick={fetchAdvice} className="btn">
-        Get New Advice
-      </button>
-    </div>
+    <React.Fragment>
+      <div>
+        <button onClick={Decrement}>-</button>
+        <button onClick={Increment}>+</button>
+      </div>
+    </React.Fragment>
   );
 }
 

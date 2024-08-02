@@ -1,5 +1,6 @@
 import React, { useState } from "react";
 import "./style.css";
+import Advice from "./Components/advice";
 const messages = ["Learn React ", "Apply for jobs ", "Invest your new income "];
 function App() {
   const [step, setStep] = useState(1);
@@ -27,7 +28,7 @@ function App() {
 
   return (
     <div>
-      <button className="close" onClick={handleOnClick}>
+      {/* <button className="close" onClick={handleOnClick}>
         &times;
       </button>
       {isOpen && (
@@ -55,7 +56,8 @@ function App() {
             </button>
           </div>
         </div>
-      )}
+      )} */}
+      <Advice />
     </div>
   );
 }

@@ -1,20 +1,29 @@
 import React, { useState } from "react";
 
 function Advice() {
-  const [count, setCount] = useState(0)
+  const [count, setCount] = useState(0);
 
-  function Decerement() {
-    setCount(count - 1)
+  function Decrement() {
+    setCount(count - 1);
   }
 
   function Increment() {
-    setCount(count + 1)
+    setCount(count + 1);
   }
 
   return (
     <React.Fragment>
-      <div>
+      <div
+        style={{
+          display: "flex",
+          alignItems: "center",
+          justifyContent: "center",
+          color: "#fff",
+          gap: "10px",
+        }}
+      >
         <button onClick={Decrement}>-</button>
+        <span>{count}</span>
         <button onClick={Increment}>+</button>
       </div>
     </React.Fragment>

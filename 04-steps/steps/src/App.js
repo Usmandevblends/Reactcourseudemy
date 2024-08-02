@@ -1,13 +1,11 @@
 import React, { useState } from "react";
 import "./style.css";
-import Advice from "./Components/advice";
 
 const messages = [
   "Learn React ⚛️",
   "Apply for jobs 💼",
   "Invest your new income 🤑",
 ];
-
 function App() {
   const [step, setStep] = useState(1);
 
@@ -51,9 +49,6 @@ function App() {
           </button>
         </div>
       </div>
-      <center>
-      <Advice />
-      </center>
     </>
   );
 }

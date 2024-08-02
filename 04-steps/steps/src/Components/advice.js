@@ -2,6 +2,7 @@ import React, { useState } from "react";
 
 function Advice() {
   const [count, setCount] = useState(0);
+  const [step, setStep] = useState(0)
 
   function Decrement() {
     setCount(count - 1);
@@ -22,6 +23,40 @@ function Advice() {
             alignItems: "center",
             justifyContent: "center",
             gap: "15px",
+          }}
+        >
+          <button
+            onClick={Decrement}
+            style={{
+              background: "transparent",
+              border: " 1px solid #fff",
+              color: "#fff",
+              outline: "none",
+            }}
+          >
+            -
+          </button>
+          <span>{count}</span>
+          <button
+            onClick={Increment}
+            style={{
+              background: "transparent",
+              border: " 1px solid #fff",
+              color: "#fff",
+              outline: "none",
+            }}
+          >
+            +
+          </button>
+        </div>
+        <div
+          style={{
+            display: "flex",
+            flexDirection: "row",
+            alignItems: "center",
+            justifyContent: "center",
+            gap: "15px",
+            marginTop: '10px'
           }}
         >
           <button

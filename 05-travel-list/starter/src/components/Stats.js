@@ -3,10 +3,8 @@ import React from "react";
 function Stats() {
   return (
     <>
-      <footer>
-        <em>
+      <footer className="stats">
           <em>You Have X items on Your list, and you already packed X (X%)</em>
-        </em>
       </footer>
     </>
   );

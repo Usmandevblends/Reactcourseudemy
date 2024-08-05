@@ -2,7 +2,9 @@ import React from 'react'
 
 function PackingList() {
   return (
-    <div>PackingList</div>
+    <>
+      <div className="list">List</div>
+    </>
   )
 }
 

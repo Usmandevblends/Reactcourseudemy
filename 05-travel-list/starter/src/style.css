@@ -16,8 +16,9 @@ body {
   color: #5a3e2b;
   font-family: "Quicksand";
   font-weight: 500;
+  user-select: none;
 }
-
+/* Base Styles */
 .app {
   width: 100%;
   height: 100vh;
@@ -74,7 +75,6 @@ input {
   background-color: #5a3e2b;
   color: #ffebb3;
   padding: 4rem 0;
-
   display: flex;
   justify-content: space-between;
   flex-direction: column;
@@ -95,7 +95,6 @@ input {
   list-style: none;
   width: 80%;
   overflow: scroll;
-
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
   gap: 1.2rem;
@@ -129,4 +128,103 @@ input[type="checkbox"] {
   text-align: center;
   font-weight: 700;
   padding: 3.2rem 0;
+}
+
+/* Media Queries */
+
+/* Small devices (phones, 600px and down) */
+@media (max-width: 600px) {
+  h1 {
+    font-size: 3rem;
+    padding: 1.2rem 0;
+  }
+
+  h3 {
+    font-size: 1.6rem;
+  }
+
+  button,
+  select,
+  input {
+    padding: 0.8rem 2rem;
+    font-size: 1.4rem;
+  }
+
+  .list ul {
+    width: 100%;
+    gap: 0.8rem;
+  }
+
+  .list li {
+    flex-direction: column;
+    gap: 0.8rem;
+  }
+
+  .stats {
+    padding: 2rem 0;
+  }
+}
+
+/* Medium devices (tablets, 600px to 900px) */
+@media (min-width: 600px) and (max-width: 900px) {
+  h1 {
+    font-size: 6rem;
+    padding: 1.6rem 0;
+  }
+
+  h3 {
+    font-size: 2rem;
+  }
+
+  button,
+  select,
+  input {
+    padding: 1rem 2.4rem;
+    font-size: 1.6rem;
+  }
+
+  .list ul {
+    width: 90%;
+    gap: 1rem;
+  }
+
+  .list li {
+    gap: 1rem;
+  }
+
+  .stats {
+    padding: 2.4rem 0;
+  }
+}
+
+/* Large devices (desktops, 900px and up) */
+@media (min-width: 900px) {
+  h1 {
+    font-size: 8rem;
+    padding: 2.4rem 0;
+  }
+
+  h3 {
+    font-size: 2.4rem;
+  }
+
+  button,
+  select,
+  input {
+    padding: 1.2rem 3.2rem;
+    font-size: 1.8rem;
+  }
+
+  .list ul {
+    width: 80%;
+    gap: 1.2rem;
+  }
+
+  .list li {
+    gap: 1.2rem;
+  }
+
+  .stats {
+    padding: 3.2rem 0;
+  }
 }

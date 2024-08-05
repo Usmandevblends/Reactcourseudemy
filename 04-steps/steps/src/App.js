@@ -28,7 +28,7 @@ function App() {
 
   return (
     <div>
-      {/* <button className="close" onClick={handleOnClick}>
+      <button className="close" onClick={handleOnClick}>
         &times;
       </button>
       {isOpen && (
@@ -56,7 +56,7 @@ function App() {
             </button>
           </div>
         </div>
-      )} */}
+      )}
       <Advice />
     </div>
   );

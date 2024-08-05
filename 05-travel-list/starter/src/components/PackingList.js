@@ -1,11 +1,15 @@
-import React from 'react'
+import React from "react";
 
-function PackingList() {
+function PackingList(initialItems) {
   return (
     <>
-      <div className="list">List</div>
+      <ul className="list">
+        {initialItems.map((item) => (
+          <Item item={item} />
+        ))}
+      </ul>
     </>
-  )
+  );
 }
 
-export default PackingList
+export default PackingList;

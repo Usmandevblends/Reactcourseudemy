@@ -3,13 +3,13 @@ import Item from "./Item"; // Import the Item component
 
 function PackingList({ initialItems }) {
   return (
-    <>
-      <ul className="list">
+    <div className="list">
+      <ul>
         {initialItems.map((item) => (
           <Item item={item}/> 
         ))}
       </ul>
-    </>
+    </div>
   );
 }
 

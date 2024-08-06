@@ -1,4 +1,4 @@
-import React, { useState } from "react";
+import React from "react";
 import Item from "./Item"; // Import the Item component
 
 function PackingList({ initialItems }) {
@@ -6,7 +6,7 @@ function PackingList({ initialItems }) {
     <div className="list">
       <ul>
         {initialItems.map((item) => (
-          <Item item={item}/> 
+          <Item key={item.id} item={item}/> 
         ))}
       </ul>
     </div>

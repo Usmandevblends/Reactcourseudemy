@@ -1,6 +1,7 @@
+// App.js
 import React from "react";
 import "./style.css";
-import Logo from "./components/Logo";
+import Logo from "./components/LogoApp";
 import Form from "./components/Form";
 import PackingList from "./components/PackingList";
 import Stats from "./components/Stats";
@@ -15,7 +16,7 @@ function App() {
     <div className="app">
       <Logo />
       <Form />
-      <PackingList initialItems={initialItems} />
+      {PackingList && <PackingList initialItems={initialItems} />}
       <Stats />
     </div>
   );

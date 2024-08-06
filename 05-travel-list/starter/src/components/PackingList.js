@@ -1,4 +1,4 @@
-import React from "react";
+import React, { useState } from "react";
 import Item from "./Item"; // Import the Item component
 
 function PackingList({ initialItems }) {
@@ -6,7 +6,7 @@ function PackingList({ initialItems }) {
     <>
       <ul className="list">
         {initialItems.map((item) => (
-          <Item item={item}/> // Always provide a unique key when rendering lists
+          <Item item={item}/> 
         ))}
       </ul>
     </>

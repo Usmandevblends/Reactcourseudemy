@@ -1,7 +1,9 @@
 import React from "react";
 
 function Form() {
-  function handleSubmit(e) {}
+  function handleSubmit(e) {
+    e.preventDefault();
+  }
 
   return (
     <React.Fragment key="form">

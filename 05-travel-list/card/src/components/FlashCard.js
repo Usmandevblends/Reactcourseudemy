@@ -4,7 +4,7 @@ function FlashCard({ questions }) {
   return (
     <div className="flashcards">
       {questions.map((question) => (
-        <div>
+        <div className="cards-content">
           <p>{question.question}</p>
         </div>
       ))}

@@ -5,14 +5,9 @@ function Form() {
   const [quantity, setQuantity] = useState(1);
   const [item, setItem] = useState([]);
 
-function handleAddItem(item) {
-
-}
-
-
-
-
-
+  function handleAddItem(item) {
+    setItem((items) => [...items, item])
+  }
 
   function handleSubmit(e) {
     e.preventDefault();
@@ -20,7 +15,7 @@ function handleAddItem(item) {
     const newItem = { description, quantity, packed: false, id: Date.now() };
     console.log(newItem);
 
-    handleAddItem(newItemb)
+    handleAddItem(newItem);
 
     setDescription("");
     setQuantity("1");

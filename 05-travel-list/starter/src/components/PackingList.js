@@ -1,11 +1,11 @@
 import React from "react";
 import Item from "./Item"; // Import the Item component
 
-function PackingList({ initialItems }) {
+function PackingList({ initialItems, items }) {
   return (
     <div className="list">
       <ul>
-        {initialItems.map((item) => (
+        {items.map((item) => (
           <Item key={item.id} item={item} />
         ))}
       </ul>

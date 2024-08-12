@@ -1,13 +1,8 @@
 import React, { useState } from "react";
 
-function Form() {
+function Form({onAddItems}) {
   const [description, setDescription] = useState("");
   const [quantity, setQuantity] = useState(1);
-  const [item, setItem] = useState([]);
-
-  function handleAddItem(item) {
-    setItem((items) => [...items, item])
-  }
 
   function handleSubmit(e) {
     e.preventDefault();
@@ -15,14 +10,14 @@ function Form() {
     const newItem = { description, quantity, packed: false, id: Date.now() };
     console.log(newItem);
 
-    handleAddItem(newItem);
+    onAddItems(newItem);
 
     setDescription("");
     setQuantity("1");
   }
 
   return (
-    <React.Fragment key="form">
+    <div key="form">
       <form className="add-form" onSubmit={handleSubmit}>
         <h3>What do you need for your 😍 trip?</h3>
         <select value={quantity} onChange={(e) => setQuantity(e.target.value)}>
@@ -40,7 +35,7 @@ function Form() {
         />
         <button>Add</button>
       </form>
-    </React.Fragment>
+    </div>
   );
 }
 

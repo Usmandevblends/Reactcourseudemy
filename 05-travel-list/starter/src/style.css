@@ -12,13 +12,6 @@ select::-webkit-scrollbar-thumb {
     #fcc545 100%
   );
 }
-
-
-
-
-
-
-
 @import url("https://fonts.googleapis.com/css2?family=Monoton&family=Quicksand:wght@500;700&display=swap");
 
 * {
@@ -163,9 +156,13 @@ option:focus {
     font-size: 3rem;
     padding: 1.2rem 0;
   }
-
+  .add-form {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+  }
   h3 {
-    font-size: 1.2rem;
+    font-size: 1.5rem;
   }
 
   button,
@@ -184,9 +181,9 @@ option:focus {
     flex-direction: column;
     gap: 0.8rem;
   }
-
   .stats {
-    padding: 2rem 0;
+    padding: 3rem 0;
+    font-size: 15px;
   }
 }
 

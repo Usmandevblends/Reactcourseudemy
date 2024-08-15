@@ -175,16 +175,19 @@ option:focus {
   .list ul {
     width: 100%;
     gap: 0.8rem;
+    display: grid;
+    place-items:center;
+    align-items: center;
   }
 
   .list li {
-    flex-direction: column;
     gap: 0.8rem;
   }
   .stats {
     padding: 3rem 0;
     font-size: 15px;
   }
+
 }
 
 /* Medium devices (tablets, 600px to 900px) */
@@ -252,3 +255,12 @@ option:focus {
 }
 
 
+
+@media (min-width: 357px) {
+  .btns {
+    display: flex !important;
+    align-items: center !important;
+    justify-content: center !important;
+    gap: 1rem;
+  }
+}

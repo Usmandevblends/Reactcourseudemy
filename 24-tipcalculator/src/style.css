@@ -21,7 +21,10 @@ body {
 
 .btn {
     padding: 8px 25px;
-    background-color: tomato;
-    border: none;
-    color: #fff;
+    background: transparent;
+    border: 1px solid tomato;
+    border-radius: 50px;
+    color: tomato;
+    font-weight: bold;
+    box-shadow: 1px 1px  1px rgb(193, 193, 193);
 }

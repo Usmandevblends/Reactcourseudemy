@@ -1,18 +1,18 @@
-import React from 'react'
-import BillInput from './BillInput'
-import SelectPercentage from './SelectPercentage'
-import Output from './Output'
-import Reset from './Reset'
+import React from "react";
+import BillInput from "./BillInput";
+import SelectPercentage from "./SelectPercentage";
+import Output from "./Output";
+import Reset from "./Reset";
 
 function TipCalculator() {
   return (
-    <div>
-        <BillInput />
-        <SelectPercentage />
-        <Output />
-        <Reset />
-    </div>
-  )
+    <center>
+      <BillInput />
+      <SelectPercentage />
+      <Output />
+      <Reset />
+    </center>
+  );
 }
 
-export default TipCalculator
+export default TipCalculator;

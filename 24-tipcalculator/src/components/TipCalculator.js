@@ -6,12 +6,13 @@ import Reset from "./Reset";
 
 function TipCalculator() {
   return (
-    <center>
+    <div className="main">
       <BillInput />
-      <SelectPercentage />
+      <SelectPercentage> How did you like the Service? </ SelectPercentage>
+      <SelectPercentage> How did your friend like the service? </ SelectPercentage>
       <Output />
       <Reset />
-    </center>
+    </div>
   );
 }
 

@@ -2,11 +2,9 @@ import React from "react";
 
 function Reset() {
   return (
-    <React.Fragment>
-      <div>
-        <button>Reset</button>
-      </div>
-    </React.Fragment>
+    <div>
+      <button class="btn">Reset</button>
+    </div>
   );
 }
 

@@ -1,12 +1,15 @@
 import React from "react";
 
-function BillInput() {
+export default function BillInput({ bill, onSetBill }) {
   return (
     <div>
-      <label htmlFor=""> How much was the bill? </label>
-      <input type="text" placeholder="Bill value" />
+      <label>How much was the bill?</label>
+      <input
+        type="text"
+        placeholder="Bill value"
+        value={bill}
+        onChange={(e) => onSetBill(Number(e.target.value))}
+      />
     </div>
   );
 }
-
-export default BillInput;

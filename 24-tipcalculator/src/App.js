@@ -1,12 +1,10 @@
-import React from 'react'
-import TipCalculator from './components/TipCalculator'
+import React from "react";
+import TipCalculator from "./components/TipCalculator";
 import './style.css'
-function App() {
+export default function App() {
   return (
-    <>
+    <div>
       <TipCalculator />
-    </>
-  )
+    </div>
+  );
 }
-
-export default App

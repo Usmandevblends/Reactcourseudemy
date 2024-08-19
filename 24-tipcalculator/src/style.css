@@ -17,14 +17,21 @@ body {
     background-blend-mode: normal, color-burn;
     padding: 50px;
     box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 50px;
+    border-top-left-radius: 20px;
+    border-bottom-right-radius:20px;
 }
 
 .btn {
-    padding: 8px 25px;
+    padding: 8px 35px;
     background: transparent;
-    border: 1px solid tomato;
+    border: 1px solid #c91d12;
     border-radius: 50px;
-    color: tomato;
+    color: #c91d12;
     font-weight: bold;
-    box-shadow: 1px 1px  1px rgb(193, 193, 193);
+    transition: 0.5s;
+}
+
+.btn:hover {
+    background: #c91d12;
+    color: #fff;
 }

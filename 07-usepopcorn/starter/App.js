@@ -79,7 +79,6 @@ export default function App() {
           Found <strong>{movies.length}</strong> results
         </p>
       </nav>
-
       <main className="main">
         <div className="box">
           <button

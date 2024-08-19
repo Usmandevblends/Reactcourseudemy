@@ -3,7 +3,7 @@ import { useState } from "react";
 const average = (arr) =>
   arr.reduce((acc, cur, i, arr) => acc + cur / arr.length, 0);
 
-function WatchedBox({tempWatchedData}) {
+function WatchedBox({ tempWatchedData }) {
   const [watched, setWatched] = useState(tempWatchedData);
   const [isOpen2, setIsOpen2] = useState(true);
 

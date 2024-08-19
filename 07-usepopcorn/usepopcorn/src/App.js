@@ -2,7 +2,6 @@ import "./style.css";
 import Navbar from "./components/Navbar";
 import Main from "./components/Main";
 
-
 const tempMovieData = [
   {
     imdbID: "tt1375666",
@@ -53,10 +52,10 @@ const tempWatchedData = [
 function App() {
   return (
     <>
-        <Navbar />
-        <Main tempMovieData={tempMovieData} tempWatchedData={tempWatchedData} />
+      <Navbar />
+      <Main tempMovieData={tempMovieData} tempWatchedData={tempWatchedData} />
     </>
-  )
+  );
 }
 
-export default App
+export default App;

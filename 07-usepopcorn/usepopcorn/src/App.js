@@ -3,6 +3,7 @@ import Navbar from "./components/Navbar";
 import Main from "./components/Main";
 
 const tempMovieData = [
+
   {
     imdbID: "tt1375666",
     Title: "Inception",

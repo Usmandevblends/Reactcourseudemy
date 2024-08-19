@@ -2,12 +2,11 @@ import { useState } from "react";
 import ListBox from "./ListBox";
 import WatchedBox from "./WatchedBox";
 
-function Main({tempMovieData, tempWatchedData}) {
+function Main({ tempMovieData, tempWatchedData }) {
   return (
     <main className="main">
-        <ListBox tempMovieData={tempMovieData} />
-        <WatchedBox  tempWatchedData={tempWatchedData} />
-
+      <ListBox tempMovieData={tempMovieData} />
+      <WatchedBox tempWatchedData={tempWatchedData} />
     </main>
   );
 }

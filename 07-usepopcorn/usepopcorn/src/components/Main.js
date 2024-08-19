@@ -1,5 +1,8 @@
 import { useState } from "react";
 
+const average = (arr) =>
+  arr.reduce((acc, cur, i, arr) => acc + cur / arr.length, 0);
+
 function Main({tempMovieData, tempWatchedData}) {
   const [movies, setMovies] = useState(tempMovieData);
   const [watched, setWatched] = useState(tempWatchedData);
@@ -36,6 +39,7 @@ function Main({tempMovieData, tempWatchedData}) {
           </ul>
         )}
       </div>
+
       <div className="box">
         <button
           className="btn-toggle"

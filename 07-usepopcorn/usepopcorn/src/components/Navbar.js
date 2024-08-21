@@ -1,5 +1,5 @@
 import Logo from "./Logo";
-import Results from "./Results";
+import NumResults from "./NumResults";
 import Search from "./Search";
 
 function Navbar({ movies }) {
@@ -7,7 +7,7 @@ function Navbar({ movies }) {
     <nav className="nav-bar">
       <Logo />
       <Search />
-      <Results />
+      <NumResults movies={movies} />
     </nav>
   );
 }

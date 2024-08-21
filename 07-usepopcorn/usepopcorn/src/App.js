@@ -1,8 +1,9 @@
 import "./style.css";
 import Navbar from "./components/Navbar";
 import Main from "./components/Main";
-
+import { useState } from "react";
 const tempMovieData = [
+
   {
     imdbID: "tt1375666",
     Title: "Inception",
@@ -50,10 +51,11 @@ const tempWatchedData = [
 ];
 
 function App() {
+  const [movies, setMovies] = useState(tempMovieData);
   return (
     <>
-      <Navbar />
-      <Main tempMovieData={tempMovieData} tempWatchedData={tempWatchedData} />
+      <Navbar movies={movies} />
+      <Main tempMovieData={tempMovieData} tempWatchedData={tempWatchedData} movies={movies} />
     </>
   );
 }

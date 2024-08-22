@@ -8,6 +8,6 @@ function Main({ tempMovieData, tempWatchedData, movies }) {
       <WatchedBox tempWatchedData={tempWatchedData} />
     </main>
   );
-} 
+}
 
 export default Main;

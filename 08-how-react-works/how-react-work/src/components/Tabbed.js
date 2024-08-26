@@ -35,4 +35,3 @@ function Tabbed({ content }) {
 }
 
 export default Tabbed;
-

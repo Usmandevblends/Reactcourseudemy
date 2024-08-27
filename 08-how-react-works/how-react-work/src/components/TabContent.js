@@ -33,4 +33,3 @@ function TabContent({ item }) {
 }
 
 export default TabContent;
-

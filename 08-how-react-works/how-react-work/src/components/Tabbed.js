@@ -24,7 +24,6 @@ function Tabbed({ content }) {
           onClick={setActiveTab}
         />
       </div>
-
       {activeTab < content.length ? (
         <TabContent item={content[activeTab]} />
       ) : (

@@ -23,7 +23,7 @@ const content = [
 function App() {
   return (
     <>
-      {/* <Tabbed content={content} /> */}
+      <Tabbed content={content} />
     </>
   );
 }
